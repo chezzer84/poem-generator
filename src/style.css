@@ -1,6 +1,55 @@
 body {
   background-color: #f9f7fe;
   font-family: Helvetica, Arial, sans-serif;
+  background-image: radial-gradient(
+      ellipse farthest-corner,
+      transparent 0%,
+      transparent 35%,
+      #fff 30%,
+      #fff 40%,
+      transparent 90%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at 0px 0px,
+      transparent 0%,
+      transparent 20%,
+      #fff 15%,
+      #fff 20%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at 8px 8px,
+      transparent 0%,
+      transparent 20%,
+      #fff 15%,
+      #fff 20%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at 0px 8px,
+      transparent 0%,
+      transparent 20%,
+      #fff 15%,
+      #fff 20%,
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at 8px 0px,
+      transparent 0%,
+      transparent 20%,
+      #fff 15%,
+      #fff 20%,
+      transparent 50%
+    ),
+    linear-gradient(
+      40deg,
+      #bd2d10 0,
+      #f4502f 30%,
+      #ff6e51 50%,
+      #f4502f 70%,
+      #bd2d10 100%
+    );
+  background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
 }
 
 header {
@@ -8,11 +57,12 @@ header {
 }
 
 h1 {
+  font-family: Comic Sans, Comic Sans MS;
+  font-weight: bold;
+  text-transform: uppercase;
   text-align: center;
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 1.5;
-  color: #272044;
+  text-shadow: #ffffff -1px 1px, #ffffff -2px 2px, #ffffff -3px 3px,
+    #ffffff -4px 4px, #ffffff -5px 5px;
 }
 
 form {
@@ -30,24 +80,26 @@ form {
 }
 
 .instructions {
-  padding: 16px;
-  border: 1px solid rgba (39, 33, 66, 0.5);
+  padding: 10px 20px;
+  border: 5px solid #000;
   width: 80%;
   font-size: 16px;
-  border-radius: 50px;
+  border-radius: 50%;
   line-height: 20px;
   color: #272044;
+  text-align: center;
 }
 
 .submit-button {
   margin-left: 10px;
-  background: #885df1;
+  background: rgb(222, 76, 13);
   color: white;
   border: none;
   width: 150px;
   font-size: 16px;
   border-radius: 50px;
   padding: 14px 24px;
+  font-family: Comic Sans, Comic Sans MS;
 }
 
 .joke {
@@ -56,7 +108,7 @@ form {
   padding: 20px;
   line-height: 2;
   font-weight: 400;
-  border-left: 3px solid #885df1;
+  border-left: 3px solid orangered;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
@@ -65,16 +117,21 @@ form {
 }
 
 .joke strong {
-  color: #885df1;
+  color: orangered;
 }
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+  font-family: Comic Sans, Comic Sans MS;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: #ffffff -1px 1px, #ffffff -2px 2px, #ffffff -3px 3px,
+    #ffffff -4px 4px, #ffffff -5px 5px;
 }
 
 a {
-  color: #885df1;
+  color: dark green;
 }
 .generating {
   animation: blink-animation 1s steps(5, start) infinite;

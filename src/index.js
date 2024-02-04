@@ -5,7 +5,7 @@ function displayJoke(response) {
   new Typewriter("#joke", {
     strings: response.data.answer,
     autoStart: true,
-    delay: 75,
+    delay: 50,
     cursor: "",
   });
 }
