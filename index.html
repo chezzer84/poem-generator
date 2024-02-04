@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="src/style.css"></style>
   </head>
@@ -14,10 +16,10 @@
 </header>
 
 <main>
-<form>
+<form id="dad-joke-generator">
 <input
 type="text" 
-placeholder="enter the topic of the poem" 
+placeholder="enter the topic of the Dad joke" 
 autofocus 
 required 
 autocomplete="off"
@@ -28,10 +30,8 @@ class="instructions"
 
 </form>
 
-<div class="poem">
-    The poem will go here
-    <br />
-    and here
+<div class="joke" id="joke">
+
 </div>
 
 </main>
